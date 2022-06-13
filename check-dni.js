@@ -35,6 +35,7 @@ function validateDNI(dni) {
     }
 }
 
+
 // TODO: USA adecuadamente la función validateDNI para que el script informe al usuario si el dni introducido es válido o no.
 
 // node check-dni 123456789
@@ -43,4 +44,21 @@ function validateDNI(dni) {
 // node check-dni 00742411V
 // Debería devolver un mensaje por consola "El dni introducido es válido"
 
-console.log(process.argv[3]);
+
+
+const dniIntroducido = process.argv.slice(2)[0];
+
+/**
+ * 1. Invocar a la función validateDNI con el valor de la variable dniIntroducido
+ * 2. Mostrar por consola un mensaje diciendo si el dni es válido o no
+ */
+
+if (validateDNI(dniIntroducido.trim())) {
+    console.log("El DNI es válido")
+}
+else {
+    console.log("El DNI NO es válido");
+}
+
+// grep subcadenaquequieresbuscar ficherosenloquieresbuscar
+// grep function *js
