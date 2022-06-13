@@ -14,3 +14,7 @@
 
 // node imc.js 67 173
 // Debería mostrar por consola "Normal"
+
+
+const args = process.argv.slice(2);
+
